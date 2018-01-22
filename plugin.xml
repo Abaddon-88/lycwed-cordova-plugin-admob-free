@@ -54,8 +54,9 @@
         <source-file src="src/android/AdMobConfig.java" target-dir="app/src/main/java/name/ratson/cordova/admob" />
         <source-file src="src/android/CordovaEventBuilder.java" target-dir="app/src/main/java/name/ratson/cordova/admob" />
 
-        <framework src="com.google.android.gms:play-services-base:+" />
-        <framework src="com.google.android.gms:play-services-ads:+" />
+        <preference name="GOOGLE_API_VERSION" default="11.2.0"/>
+        <framework src="com.google.android.gms:play-services-base:$GOOGLE_API_VERSION" />
+        <framework src="com.google.android.gms:play-services-ads:$GOOGLE_API_VERSION" />
     </platform>
 
     <platform name="ios">
